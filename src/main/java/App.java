@@ -44,6 +44,7 @@ public class App {
                     System.out.println(gameWord);
                     System.out.println(image);
                     programRunning = false;
+                    break;
                 }
                 if (!thisGame.containsLetter(input)) {
                     System.out.println("You suck!! Guess again!");
