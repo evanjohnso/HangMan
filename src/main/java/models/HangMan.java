@@ -1,5 +1,8 @@
 package models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Guest on 8/2/17.
  */
@@ -7,22 +10,20 @@ public class HangMan {
     private String gameWord;
     private String wordInProgress;
     private char[] wordAsArray;
+    List<String> guessedLetters =  new ArrayList<String>();
 
     public HangMan(String gameWord) {
         this.gameWord = gameWord;
         wordInProgress = gameWord.replaceAll( "[a-zA-Z]","_" );
         wordAsArray = wordInProgress.toCharArray();
     }
-
     public boolean containsLetter(String input) {
-        boolean doesContain = gameWord.contains(input);
-        return doesContain;
-    }
-    //We don't actually need this
-    public int findLocation(char input) {
-        int location = gameWord.indexOf(input);
-        wordAsArray[location] = input;
-        return location;
+        if (guessedLetters.contains(input)) {
+            return false;
+        } else {
+            guessedLetters.add(input);
+            return true;
+        }
     }
     public void changeLetters(String input) {
         char inputChar = input.charAt(0);
@@ -41,6 +42,15 @@ public class HangMan {
     }
     public String getWordAsArray() {
         String output = new String(wordAsArray);
-        return output;
+        if (output.contains("_")) {
+            return output;
+        } else {
+            return "finished";
+        }
+
     }
+    public List<String> getGuessedLetters() {
+        return guessedLetters;
+    }
+
 }

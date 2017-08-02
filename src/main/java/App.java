@@ -23,11 +23,25 @@ public class App {
 
         while (programRunning) {
             try {
-                System.out.println(thisGame.getWordAsArray());
                 System.out.println("Guess a letter!");
+                System.out.println("******************");
                 String input = bufferedReader.readLine().toLowerCase();
-                thisGame.changeLetters(input);
-                System.out.println(thisGame.getWordAsArray());
+                if (thisGame.containsLetter(input)) {
+                    thisGame.changeLetters(input);
+                } else {
+                    System.out.println("You suck!! Guess again!");
+                }
+                System.out.println("You have already guessed: " + thisGame.getGuessedLetters());
+
+                if (thisGame.getWordAsArray().equals("finished")) {
+                    System.out.println("Congratulations, you won!!! But you still stuck!");
+                    System.out.println(thisGame.getGameWord());
+                    programRunning = false;
+                } else {
+                    System.out.println(thisGame.getWordAsArray());
+                }
+
+                System.out.println("******************");
             } catch (IOException e) {
                 e.printStackTrace();
             }

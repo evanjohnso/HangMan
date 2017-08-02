@@ -22,26 +22,15 @@ public class HangManTest {
         assertEquals(true, testHangMan.containsLetter("o"));
     }
     @Test
-    public void newHangMan_findLocations() {
-        HangMan testHangMan = new HangMan("hello");
-        assertEquals(0, testHangMan.findLocation('h'));
-    }
-    @Test
     public void newHangMan_createGameWord() {
         HangMan testHangMan = new HangMan("hel");
         assertEquals("___", testHangMan.getWordInProgress() );
     }
     @Test
-    public void newHangMan_changeWordInProgress() {
-        HangMan testHangMan = new HangMan("hel");
-        testHangMan.findLocation('h');
-        assertEquals("h__", testHangMan.getWordAsArray() );
-    }
-    @Test
     public void newHangMan_changeLetters() {
         HangMan testHangMan = new HangMan("helloo");
-        testHangMan.changeLetters('l');
-        testHangMan.changeLetters('h');
+        testHangMan.changeLetters("l");
+        testHangMan.changeLetters("l");
         assertEquals("__ll__", testHangMan.getWordAsArray() );
     }
 }
