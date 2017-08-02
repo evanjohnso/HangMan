@@ -19,4 +19,9 @@ public class HangManTest {
         HangMan testHangMan = new HangMan("hello");
         assertEquals("hello", testHangMan.getGameWord());
     }
+    @Test
+    public void newHangMan_doesContain() {
+        HangMan testHangMan = new HangMan("hello");
+        assertEquals(true, testHangMan.containsLetter("o"));
+    }
 }
