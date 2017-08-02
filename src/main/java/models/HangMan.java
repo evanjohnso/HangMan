@@ -24,10 +24,11 @@ public class HangMan {
         wordAsArray[location] = input;
         return location;
     }
-    public void changeLetters(char input) {
+    public void changeLetters(String input) {
+        char inputChar = input.charAt(0);
         for (int i = 0; i < gameWord.length(); i++) {
-            if (gameWord.charAt(i) == input) {
-                wordAsArray[i] = input;
+            if (gameWord.charAt(i) == inputChar) {
+                wordAsArray[i] = inputChar;
             }
         }
     }

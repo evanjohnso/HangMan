@@ -7,12 +7,12 @@ import java.util.Random;
  */
 public class WordBank {
 
-    Random randomNumber = new Random();
+    Random random = new Random();
 
     String[] bank = {"homies","pickles","juice","oranges","grapes"};
 
     public String randomWord() {
-        String randomWord = bank[randomNumber.nextInt(5)];
+        String randomWord = bank[random.nextInt(5)];
         return randomWord;
-    }
+}
 }

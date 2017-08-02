@@ -1,3 +1,4 @@
+import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 import models.HangMan;
 import models.WordBank;
 
@@ -13,19 +14,23 @@ public class App {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         boolean programRunning = true;
 
-        WordBank.
-        System.out.println(random);
+        WordBank rando = new WordBank();
+        String gameWord = rando.randomWord();
 
+        HangMan thisGame = new HangMan(gameWord);
+        System.out.println("Hey, lets play Hangman!!!!");
+        System.out.println("Here is your word!");
 
-        try {
-            System.out.println("Hey, lets play Hangman!!!!");
-            String input = bufferedReader.readLine().toLowerCase();
-
-
-        }
-        catch(IOException e)
-        {
-            e.printStackTrace();
+        while (programRunning) {
+            try {
+                System.out.println(thisGame.getWordAsArray());
+                System.out.println("Guess a letter!");
+                String input = bufferedReader.readLine().toLowerCase();
+                thisGame.changeLetters(input);
+                System.out.println(thisGame.getWordAsArray());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
