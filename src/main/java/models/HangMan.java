@@ -18,19 +18,23 @@ public class HangMan {
         boolean doesContain = gameWord.contains(input);
         return doesContain;
     }
-
+    //We don't actually need this
     public int findLocation(char input) {
         int location = gameWord.indexOf(input);
         wordAsArray[location] = input;
         return location;
     }
-
-
+    public void changeLetters(char input) {
+        for (int i = 0; i < gameWord.length(); i++) {
+            if (gameWord.charAt(i) == input) {
+                wordAsArray[i] = input;
+            }
+        }
+    }
     //GETTERS
     public String getGameWord() {
         return gameWord;
     }
-
     public String getWordInProgress() {
         return wordInProgress;
     }

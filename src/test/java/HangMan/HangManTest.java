@@ -5,9 +5,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by Guest on 8/2/17.
- */
 public class HangManTest {
     @Test
     public void newHangMan_instantiatesCorrectly() {
@@ -39,5 +36,12 @@ public class HangManTest {
         HangMan testHangMan = new HangMan("hel");
         testHangMan.findLocation('h');
         assertEquals("h__", testHangMan.getWordAsArray() );
+    }
+    @Test
+    public void newHangMan_changeLetters() {
+        HangMan testHangMan = new HangMan("helloo");
+        testHangMan.changeLetters('l');
+        testHangMan.changeLetters('h');
+        assertEquals("__ll__", testHangMan.getWordAsArray() );
     }
 }

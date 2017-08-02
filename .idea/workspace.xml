@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffcc2706-3d89-44e0-a9aa-b8eece3dcac2" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/App.java" afterPath="$PROJECT_DIR$/src/main/java/App.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/HangMan.java" afterPath="$PROJECT_DIR$/src/main/java/models/HangMan.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/HangMan/HangManTest.java" afterPath="$PROJECT_DIR$/src/test/java/HangMan/HangManTest.java" />
     </list>
@@ -26,23 +29,45 @@
       <file leaf-file-name="HangMan.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/HangMan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="37" column="48" lean-forward="true" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+            <state relative-caret-position="150">
+              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
               <folding>
-                <element signature="e#720#721#0" expanded="true" />
-                <element signature="e#751#752#0" expanded="true" />
-                <element signature="e#792#793#0" expanded="true" />
-                <element signature="e#829#830#0" expanded="true" />
+                <element signature="e#966#967#0" expanded="true" />
+                <element signature="e#997#998#0" expanded="true" />
+                <element signature="e#1037#1038#0" expanded="true" />
+                <element signature="e#1074#1075#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HangManTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WordBank.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/WordBank.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="32" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HangManTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/HangMan/HangManTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="40" column="54" lean-forward="false" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="54" />
+            <state relative-caret-position="165">
+              <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -353,10 +378,11 @@
         <option value="$PROJECT_DIR$/src/main/java/HangMan/HangMan.java" />
         <option value="$PROJECT_DIR$/src/main/java/HangMan/WordBank.java" />
         <option value="$PROJECT_DIR$/src/test/java/HangMan/WordBankTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/WordBank.java" />
         <option value="$PROJECT_DIR$/src/test/java/models/WordBankTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/HangMan/HangManTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/HangMan.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/WordBank.java" />
+        <option value="$PROJECT_DIR$/src/main/java/App.java" />
       </list>
     </option>
   </component>
@@ -406,6 +432,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -496,6 +526,10 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -509,33 +543,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HangManTest">
-    <configuration default="false" name="HangManTest.newHangMan_instantiatesCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="HangMan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Hang-man_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="HangMan" />
-      <option name="MAIN_CLASS_NAME" value="HangMan.HangManTest" />
-      <option name="METHOD_NAME" value="newHangMan_instantiatesCorrectly" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.App">
     <configuration default="false" name="WordBankTest.newWordBank_givesRandomWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -638,6 +646,21 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Hang-man_main" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -845,19 +868,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.HangManTest.newHangMan_instantiatesCorrectly" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.WordBankTest.newWordBank_givesRandomWord" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.WordBankTest.newWordBank_instantiatesCorrectly" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.WordBankTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.HangManTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.WordBankTest.newWordBank_givesRandomWord" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.WordBankTest.newWordBank_instantiatesCorrectly" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.WordBankTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.HangManTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.App" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.HangManTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.WordBankTest.newWordBank_givesRandomWord" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.WordBankTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.WordBankTest.newWordBank_instantiatesCorrectly" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.HangManTest.newHangMan_instantiatesCorrectly" />
+        <item index="0" class="java.lang.String" itemvalue="Application.App" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.HangManTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.WordBankTest.newWordBank_givesRandomWord" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.WordBankTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.WordBankTest.newWordBank_instantiatesCorrectly" />
       </list>
     </recent_temporary>
   </component>
@@ -875,39 +898,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HangManTest - 2017.08.02 at 11h 30m 20s.xml">
-      <configuration name="HangManTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HangManTest - 2017.08.02 at 11h 30m 59s.xml">
-      <configuration name="HangManTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HangManTest - 2017.08.02 at 11h 33m 06s.xml">
-      <configuration name="HangManTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HangManTest - 2017.08.02 at 11h 33m 26s.xml">
-      <configuration name="HangManTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HangManTest - 2017.08.02 at 11h 34m 05s.xml">
-      <configuration name="HangManTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HangManTest - 2017.08.02 at 11h 34m 46s.xml">
-      <configuration name="HangManTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HangManTest - 2017.08.02 at 11h 35m 32s.xml">
-      <configuration name="HangManTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HangManTest - 2017.08.02 at 11h 35m 42s.xml">
-      <configuration name="HangManTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HangManTest - 2017.08.02 at 11h 35m 50s.xml">
-      <configuration name="HangManTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HangManTest - 2017.08.02 at 11h 38m 02s.xml">
+      <configuration name="HangManTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HangManTest - 2017.08.02 at 11h 39m 39s.xml">
+      <configuration name="HangManTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HangManTest - 2017.08.02 at 13h 45m 49s.xml">
+      <configuration name="HangManTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HangManTest - 2017.08.02 at 13h 46m 02s.xml">
+      <configuration name="HangManTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HangManTest - 2017.08.02 at 13h 47m 16s.xml">
+      <configuration name="HangManTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HangManTest - 2017.08.02 at 13h 47m 43s.xml">
+      <configuration name="HangManTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HangManTest - 2017.08.02 at 13h 47m 57s.xml">
+      <configuration name="HangManTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HangManTest - 2017.08.02 at 13h 52m 20s.xml">
+      <configuration name="HangManTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HangManTest - 2017.08.02 at 13h 52m 28s.xml">
+      <configuration name="HangManTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HangManTest - 2017.08.02 at 14h 02m 08s.xml">
       <configuration name="HangManTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1261" y="23" width="1272" height="1000" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -918,7 +942,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23898679" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -952,14 +976,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="6" lean-forward="false" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/HangMan/WordBank.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -976,14 +992,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/WordBank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/models/WordBankTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -994,31 +1002,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        <state relative-caret-position="630">
+          <caret line="42" column="6" lean-forward="false" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/HangMan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="37" column="48" lean-forward="true" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+        <state relative-caret-position="150">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding>
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#792#793#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1074#1075#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HangMan/HangManTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="40" column="54" lean-forward="false" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="54" />
+        <state relative-caret-position="165">
+          <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/WordBank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="32" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

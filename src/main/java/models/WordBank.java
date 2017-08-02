@@ -15,5 +15,4 @@ public class WordBank {
         String randomWord = bank[randomNumber.nextInt(5)];
         return randomWord;
     }
-
 }
