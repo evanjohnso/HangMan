@@ -20,6 +20,19 @@ public class App {
         HangMan thisGame = new HangMan(gameWord);
         System.out.println("Hey, lets play Hangman!!!!");
         System.out.println("Here is your word!");
+        int guesses = 0;
+
+        String image = "888                                                           \n" +
+                "888                                                           \n" +
+                "888                                                           \n" +
+                "88888b.  8888b. 88888b.  .d88b. 88888b.d88b.  8888b. 88888b.  \n" +
+                "888 \"88b    \"88b888 \"88bd88P\"88b888 \"888 \"88b    \"88b888 \"88b \n" +
+                "888  888.d888888888  888888  888888  888  888.d888888888  888 \n" +
+                "888  888888  888888  888Y88b 888888  888  888888  888888  888 \n" +
+                "888  888\"Y888888888  888 \"Y88888888  888  888\"Y888888888  888 \n" +
+                "                             888                              \n" +
+                "                        Y8b d88P                              \n" +
+                "                         \"Y88P\"                               ";
 
         while (programRunning) {
             try {
@@ -29,45 +42,32 @@ public class App {
                 if (input.equals(gameWord)) {
                     System.out.println("You win!!!!");
                     System.out.println(gameWord);
-                    System.out.println("888                                                           \n" +
-                            "888                                                           \n" +
-                            "888                                                           \n" +
-                            "88888b.  8888b. 88888b.  .d88b. 88888b.d88b.  8888b. 88888b.  \n" +
-                            "888 \"88b    \"88b888 \"88bd88P\"88b888 \"888 \"88b    \"88b888 \"88b \n" +
-                            "888  888.d888888888  888888  888888  888  888.d888888888  888 \n" +
-                            "888  888888  888888  888Y88b 888888  888  888888  888888  888 \n" +
-                            "888  888\"Y888888888  888 \"Y88888888  888  888\"Y888888888  888 \n" +
-                            "                             888                              \n" +
-                            "                        Y8b d88P                              \n" +
-                            "                         \"Y88P\"                               ");
+                    System.out.println(image);
                     programRunning = false;
                 }
-                if (thisGame.containsLetter(input)) {
-                    thisGame.changeLetters(input);
-                } else {
+                if (!thisGame.containsLetter(input)) {
                     System.out.println("You suck!! Guess again!");
                 }
+
                 System.out.println("You have already guessed: " + thisGame.getGuessedLetters());
 
                 if (thisGame.getWordAsArray().equals("finished")) {
                     System.out.println("Congratulations, you won!!! But you still stuck!");
-                    System.out.println("888                                                           \n" +
-                            "888                                                           \n" +
-                            "888                                                           \n" +
-                            "88888b.  8888b. 88888b.  .d88b. 88888b.d88b.  8888b. 88888b.  \n" +
-                            "888 \"88b    \"88b888 \"88bd88P\"88b888 \"888 \"88b    \"88b888 \"88b \n" +
-                            "888  888.d888888888  888888  888888  888  888.d888888888  888 \n" +
-                            "888  888888  888888  888Y88b 888888  888  888888  888888  888 \n" +
-                            "888  888\"Y888888888  888 \"Y88888888  888  888\"Y888888888  888 \n" +
-                            "                             888                              \n" +
-                            "                        Y8b d88P                              \n" +
-                            "                         \"Y88P\"                               ");
+                    System.out.println(image);
                     System.out.println(thisGame.getGameWord());
                     programRunning = false;
                 } else {
-                    System.out.println(thisGame.getWordAsArray());
-                }
+                    guesses ++;
+                    if (guesses < 10) {
+                        System.out.println(thisGame.getWordAsArray());
+                        System.out.println("Guesses left: " + (10 - guesses));
+                    } else {
+                        System.out.println("You're out of guesses!");
+                        System.out.println(image);
+                        programRunning = false;
+                    }
 
+                }
                 System.out.println("******************");
             } catch (IOException e) {
                 e.printStackTrace();

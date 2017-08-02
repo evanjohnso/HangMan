@@ -18,10 +18,11 @@ public class HangMan {
         wordAsArray = wordInProgress.toCharArray();
     }
     public boolean containsLetter(String input) {
-        if (guessedLetters.contains(input)) {
+        if (guessedLetters.contains(input) ) {
             return false;
         } else {
             guessedLetters.add(input);
+            changeLetters(input);
             return true;
         }
     }
@@ -47,7 +48,6 @@ public class HangMan {
         } else {
             return "finished";
         }
-
     }
     public List<String> getGuessedLetters() {
         return guessedLetters;
