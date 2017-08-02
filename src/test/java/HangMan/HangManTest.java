@@ -24,4 +24,19 @@ public class HangManTest {
         HangMan testHangMan = new HangMan("hello");
         assertEquals(true, testHangMan.containsLetter("o"));
     }
+    @Test
+    public void newHangMan_findLocations() {
+        HangMan testHangMan = new HangMan("hello");
+        assertEquals(1, testHangMan.findLocation("e"));
+    }
+    @Test
+    public void newHangMan_findLocationsIfMoreThanOne() {
+        HangMan testHangMan = new HangMan("hello");
+        assertEquals(1,2, testHangMan.findLocation("l"));
+    }
+    @Test
+    public void newHangMan_createGameWord() {
+        HangMan testHangMan = new HangMan("hel");
+        assertEquals("___", testHangMan.getWordInProgress() );
+    }
 }

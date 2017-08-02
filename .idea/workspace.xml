@@ -23,24 +23,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HangMan.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HangMan.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/HangMan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="210">
+              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="22" />
               <folding>
-                <element signature="e#397#398#0" expanded="true" />
-                <element signature="e#428#429#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#651#652#0" expanded="true" />
+                <element signature="e#691#692#0" expanded="true" />
+                <element signature="e#728#729#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HangManTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HangManTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/HangMan/HangManTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="507">
+              <caret line="39" column="24" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -873,9 +875,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HangManTest - 2017.08.02 at 10h 24m 57s.xml">
-      <configuration name="HangManTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HangManTest - 2017.08.02 at 10h 26m 24s.xml">
       <configuration name="HangManTest" configurationId="JUnit" />
     </history-entry>
@@ -891,17 +890,20 @@
     <history-entry file="HangManTest - 2017.08.02 at 10h 38m 54s.xml">
       <configuration name="HangManTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordBankTest_newWordBank_givesRandomWord - 2017.08.02 at 10h 11m 12s.xml">
-      <configuration name="WordBankTest.newWordBank_givesRandomWord" configurationId="JUnit" />
+    <history-entry file="HangManTest - 2017.08.02 at 10h 43m 59s.xml">
+      <configuration name="HangManTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordBankTest_newWordBank_givesRandomWord - 2017.08.02 at 10h 15m 38s.xml">
-      <configuration name="WordBankTest.newWordBank_givesRandomWord" configurationId="JUnit" />
+    <history-entry file="HangManTest - 2017.08.02 at 10h 48m 41s.xml">
+      <configuration name="HangManTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordBankTest_newWordBank_givesRandomWord - 2017.08.02 at 10h 24m 51s.xml">
-      <configuration name="WordBankTest.newWordBank_givesRandomWord" configurationId="JUnit" />
+    <history-entry file="HangManTest - 2017.08.02 at 10h 50m 21s.xml">
+      <configuration name="HangManTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordBankTest_newWordBank_instantiatesCorrectly - 2017.08.02 at 10h 14m 47s.xml">
-      <configuration name="WordBankTest.newWordBank_instantiatesCorrectly" configurationId="JUnit" />
+    <history-entry file="HangManTest - 2017.08.02 at 11h 08m 57s.xml">
+      <configuration name="HangManTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HangManTest - 2017.08.02 at 11h 09m 06s.xml">
+      <configuration name="HangManTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1001,23 +1003,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HangMan/HangManTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/HangMan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="210">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/HangMan.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/HangMan/HangManTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="507">
+          <caret line="39" column="24" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
           <folding>
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
