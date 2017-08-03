@@ -15,12 +15,11 @@ public class App {
         boolean programRunning = true;
         /* Create new random word */
         WordBank rando = new WordBank();
-        String gameWord = rando.randomWord("medium");
 
-        HangMan thisGame = new HangMan(gameWord);
         System.out.println("Hey, lets play Hangman!!!!");
-        System.out.println("Here is your word!");
+
         int guesses = 0;
+        int tries;
 
         String image = "888                                                           \n" +
                 "888                                                           \n" +
@@ -37,41 +36,63 @@ public class App {
         while (programRunning) {
 
             try {
-                System.out.println("Guess a letter!");
+                System.out.println("Easy, Medium, or Hard?");
+                String difficulty = bufferedReader.readLine().toLowerCase();
+                if ("easy".equals(difficulty) || "medium".equals(difficulty) || "hard".equals(difficulty)) {
+                    //if valid input create game
+                    //Game works just fine if you create using valid inputs. having issues with
+                    //the while loops starting over at the proper time
+                    //also want a better choice of how many tries the user gets than just +3 word length
+                    //issue is be with the 'break' word and program running = false;
+                    String gameWord = rando.randomWord(difficulty);
+                    tries = gameWord.length() + 3;
+                    HangMan thisGame = new HangMan(gameWord);
 
-                String input = bufferedReader.readLine().toLowerCase();
-                //If user guesses word, game is over
-                if (input.equals(gameWord)) {
-                    System.out.println("You win!!!!");
-                    System.out.println(gameWord);
-                    System.out.println(image);
-                    programRunning = false;
-                    break;
-                }
-                if (!thisGame.containsLetter(input)) {
-                    System.out.println("Guess again!");
-                }
+                    while (guesses < tries) {
+                        System.out.println("Guess a letter!");
+                        String input = bufferedReader.readLine().toLowerCase();
+                        System.out.println(" ");
 
-                System.out.println("You have already guessed: " + thisGame.getGuessedLetters());
+                        //If user guesses word, game is over
+                        if (input.equals(gameWord)) {
+                            System.out.println("You win!!!!");
+                            System.out.println(image);
+                            programRunning = false;
+                            break;
+                        } else if (!thisGame.containsLetter(input)) {
+                            System.out.println("Guess again!");
+                        }
 
-                if (thisGame.getWordAsArray().equals("finished")) {
-                    System.out.println("Congratulations, you won!!! But you still stuck!");
-                    System.out.println(image);
-                    System.out.println(thisGame.getGameWord());
-                    programRunning = false;
-                } else {
-                    guesses ++;
-                    if (guesses < 10) {
-                        System.out.println(thisGame.getWordAsArray());
-                        System.out.println("Guesses left: " + (10 - guesses));
-                    } else {
-                        System.out.println("You're out of guesses!");
-                        System.out.println(image);
-                        programRunning = false;
+
+                        if (thisGame.getWordAsArray().equals("finished")) {
+                            System.out.println("Congratulations, you won!!!");
+                            System.out.println(image);
+                            programRunning = false;
+                            System.out.println("Play again? 'Y' or 'N'");
+                            String again = bufferedReader.readLine().toUpperCase();
+                            if ("Y".equals(again)) {
+                                programRunning = true;
+                            } else {
+                                System.out.println("See ya later!");
+                            }
+                        } else {
+                            guesses++;
+                            if (guesses < tries) {
+                                System.out.println(thisGame.getWordAsArray());
+                                System.out.println("Letters: " + thisGame.getGuessedLetters());
+                                System.out.println("Guesses left: " + (tries - guesses));
+                            } else {
+                                System.out.println("You're out of guesses!");
+                                System.out.println("The word was: " + gameWord);
+                                programRunning = false;
+                            }
+                        }
+                        System.out.println(" ");
                     }
-
+                } else {
+                    System.out.println("Enter a valid input");
+                    programRunning = false;
                 }
-                System.out.println("******************");
             } catch (IOException e) {
                 e.printStackTrace();
             }

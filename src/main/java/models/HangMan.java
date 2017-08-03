@@ -10,7 +10,7 @@ public class HangMan {
     private String gameWord;
     private String wordInProgress;
     private char[] wordAsArray;
-    List<String> guessedLetters =  new ArrayList<String>();
+    private List<String> guessedLetters =  new ArrayList<String>();
 
     public HangMan(String gameWord) {
         this.gameWord = gameWord;
