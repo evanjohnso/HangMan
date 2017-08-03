@@ -13,9 +13,9 @@ public class App {
     public static void main(String[] args) {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         boolean programRunning = true;
-
+        /* Create new random word */
         WordBank rando = new WordBank();
-        String gameWord = rando.randomWord();
+        String gameWord = rando.randomWord("medium");
 
         HangMan thisGame = new HangMan(gameWord);
         System.out.println("Hey, lets play Hangman!!!!");
@@ -35,10 +35,12 @@ public class App {
                 "                         \"Y88P\"                               ";
 
         while (programRunning) {
+
             try {
                 System.out.println("Guess a letter!");
-                System.out.println("******************");
+
                 String input = bufferedReader.readLine().toLowerCase();
+                //If user guesses word, game is over
                 if (input.equals(gameWord)) {
                     System.out.println("You win!!!!");
                     System.out.println(gameWord);
@@ -47,7 +49,7 @@ public class App {
                     break;
                 }
                 if (!thisGame.containsLetter(input)) {
-                    System.out.println("You suck!! Guess again!");
+                    System.out.println("Guess again!");
                 }
 
                 System.out.println("You have already guessed: " + thisGame.getGuessedLetters());
